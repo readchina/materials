@@ -12,10 +12,10 @@ All information about each post is saved in a row in Posts_22.csv file.
 Schema:
 
 ```
-'Topic' :           string
-'PostID':           string
-'Author':           string
-'AuthorID':         string
+'Topic' :           str
+'PostID':           str
+'Author':           str
+'AuthorID':         str
 'Topic':            str
 'PostID':           str 
 'Author':           str
