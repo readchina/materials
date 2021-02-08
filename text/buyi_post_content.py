@@ -69,4 +69,4 @@ for post, topic in zip(posts['PostID'], posts['Topic']):
                                     'Text': str})
     answers_df.to_csv('Posts_22/{}{}.csv'.format(topic[5:],post), encoding='utf_8_sig')
     print('Finished {}{}'.format(post,topic))
-    print('Saving the {}th file ({} files) in the folder "I_1048"--------------------'.format(len(posts),file_idx))
+    print('Saving the {}th file ({} files) in the folder Posts_22'.format(len(posts),file_idx))
