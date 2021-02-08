@@ -36,7 +36,7 @@ Each csv file contains the content postted by author and content postted by foll
 
 Schema:
 
-````
+```
 'AuthorID':     str 
 'Author':       str
 'Reply_date':   str
