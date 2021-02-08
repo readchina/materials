@@ -2,6 +2,8 @@
 
 There are two scraping scripts. These two can scrape all related posts from all pages, however, for the sake of effective test run, they are set to handel only first 10 pages. There are 22 posts labeled as "[蠹鱼会]" in the first 10 pages.
 
+[buyi bbs](http://www.booyee.com.cn/bbs/list.jsp?startrow=0&startflag=1)
+
 ## For topics of posts
 buyi_post_topics.py can select the desired postes and obtain the general information about the posts, like what the post is about, when the post is created, who postted it, and so on.
 
