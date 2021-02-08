@@ -62,7 +62,11 @@ for post, topic in zip(posts['PostID'], posts['Topic']):
     answers_df.insert(loc= 2, column='Reply_date', value=answers_df.Reply.str[:10])
     answers_df.insert(loc= 3, column='Reply_time', value=answers_df.Reply.str[11:])
     answers_df = answers_df.drop(['Reply'], axis=1)
-
+    answers_df = answers_df.astype({'AuthorID': str, 
+                                    'Author':str, 
+                                    'Reply_date':str,
+                                    'Reply_time':str,
+                                    'Text': str})
     answers_df.to_csv('Posts_22/{}{}.csv'.format(topic[5:],post), encoding='utf_8_sig')
     print('Finished {}{}'.format(post,topic))
     print('Saving the {}th file ({} files) in the folder "I_1048"--------------------'.format(len(posts),file_idx))

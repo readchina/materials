@@ -53,6 +53,15 @@ records_df = records_df.drop(['Reply/Click'],axis=1)
 records_df.insert(loc= 6, column='LastUpdate_date', value=records_df.LastUpdate.str[:10])
 records_df.insert(loc= 7, column='LastUpdate_time', value=records_df.LastUpdate.str[10:])
 records_df = records_df.drop(['LastUpdate'], axis=1)
-
+records_df = records_df.astype({'Topic': str, 
+                                'PostID':str, 
+                                'Author':str,
+                                'AuthorID':str,
+                                'Reply':int, 
+                                'Click':int, 
+                                'LastUpdate_date':str,
+                                'LastUpdate_time':str,
+                                'Follower': str,
+                                'FollowerID': str})
 records_df.index += 1
 records_df.to_csv('Posts_{}.csv'.format(len(records_df)), encoding='utf_8_sig')
