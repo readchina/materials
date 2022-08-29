@@ -8,7 +8,12 @@ The goal is to use and document a uniform filing system to maintain long-term us
 ## Important
 Before backing-up files via GitHub you must decide if the data you are about to share is in the public domain, or if it contains sensitive information and should remain private for either legal or privacy reasons.
 
-Sensitive data **must** be encrypted before uploading, it should be stored in private repos only! You have received detailed instructions for how to encrypt files before uploading. This information will not be repeated here.
+Sensitive data **must** be encrypted before uploading, it should be stored in private repos only! You have received detailed instructions for how to encrypt files before uploading. This information will not be repeated here. To ensure that you will never accidentally push unencrypted files to GitHub, it is safest to add the name of your unencrypted files to the `.gitignore` file as soon as you copy a new file into this repo, e.g.:
+
+```
+# encrypted files
+2001-01-01_interview_WP1-001_01.wav
+```
 
 Once you have determined if your files are either private or public you can simply follow the instructions outlined below. Lastly, work releated files should be uploaded into the `readchina` organization. 
 
